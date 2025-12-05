@@ -1,0 +1,289 @@
+:root {
+  --color-background: #2b4074;
+  --color-surface: #f9f6e5;
+  --color-caption: #797979;
+  --color-section-border: #f9f6e5;
+  --color-empty: #ffffff00;
+  --color-service-labels: #4a4a4a;
+  --color-service-description: #9b9b9b;
+}
+
+.text-white {
+  color: white;
+}
+
+.text-background {
+  color: var(--color-background);
+}
+
+.text-service-label {
+  color: var(--color-service-labels);
+}
+
+.text-service-description {
+  color: var(--color-service-description);
+}
+
+.bg-background {
+  background-color: var(--color-background);
+}
+
+.bg-surface {
+  background-color: var(--color-surface);
+}
+
+.text-display-large {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 96px;
+  line-height: 96px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.text-display-medium {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.text-display-small {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 100%;
+}
+
+.text-display-micro {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 100%;
+}
+
+.text-title {
+  font-family: Roboto Condensed;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+.text-body-large {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.text-body-medium {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text-body-small {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+}
+
+.text-label-bold {
+  font-family: Roboto Condensed;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+.text-button {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: bottom;
+  text-transform: uppercase;
+}
+
+.text-caption {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.text-note {
+  font-family: "Dosis", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.text-description {
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  text-align: center;
+  vertical-align: bottom;
+}
+
+header {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.site-logo {
+  margin-left: 153px;
+}
+
+.menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: none;
+  padding: 0;
+  border-width: none;
+  border-radius: 3px;
+  margin-right: 135px;
+}
+
+.menu-button > img {
+  width: 12px;
+  height: 10px;
+}
+
+.slider-img1 {
+  background-image: url("../assets/images/slider-earth.jpg");
+  background-position: -10px -512px;
+  height: 668px;
+  background-color: rgba(33, 33, 33, 0.5);
+  background-blend-mode: multiply;
+}
+
+.call-me-back-section {
+  padding: 57px 135px 57px 150px;
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.call-me-back-section > div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  max-width: 796px;
+}
+
+.call-me-back-section > div > p {
+  margin: 0;
+  height: 42px;
+  vertical-align: bottom;
+}
+
+.call-me-back-section > div > h3 {
+  margin: 0;
+}
+
+.call-me-back-button {
+  padding: 16px 9px;
+  border: none;
+  border-radius: 3px;
+  height: fit-content;
+}
+
+.service-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.service-section > .service-text {
+  max-width: 393px;
+  margin: 90px 60px 0px 62px;
+}
+
+.service-section > div > h2 {
+  line-height: 56px;
+  margin-bottom: 64px;
+  margin-top: 0;
+}
+
+.service-section > div > h3 {
+  line-height: 30px;
+  color: #4a4a4a;
+  margin: 0;
+}
+
+.service-section > div > hr {
+  width: 100px;
+  height: 8px;
+  background-color: var(--color-background);
+  margin: 30px 0 35px 0;
+}
+
+.service-section > div > p {
+  margin: 0;
+  color: var(--color-caption);
+}
+
+.service-section-grid {
+  display: grid;
+  width: 924px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 273px);
+}
+
+.service-section-grid > .element-wrapper {
+  padding: 10px;
+  border: solid 1px #f9f6e5;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.service-section-grid > .element-wrapper > .element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: solid 4px var(--color-empty);
+  height: 100%;
+  max-height: 273px;
+}
+
+.service-section-grid > .element-wrapper:hover > .element {
+  border-color: var(--color-background);
+}
+
+.service-section-grid > .element-wrapper > .element > h4 {
+  margin-top: 28px;
+  text-transform: uppercase;
+}
+
+.service-section-grid > .element-wrapper:hover > .element > h4 {
+  margin-bottom: 21px;
+}
+
+.service-section-grid > .element-wrapper > .element > span {
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  display: none;
+}
+
+.service-section-grid > .element-wrapper:hover > .element > span {
+  display: flex;
+}
