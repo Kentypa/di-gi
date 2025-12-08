@@ -287,3 +287,53 @@ header {
 .service-section-grid > .element-wrapper:hover > .element > span {
   display: flex;
 }
+
+.our-projects-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(180deg, #2b4074 0%, rgba(43, 64, 116, 0) 100%);
+  padding: 80px 0 80px 0;
+  gap: 80px;
+}
+
+.our-projects-section > .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.our-projects-section > div > h2 {
+  vertical-align: bottom;
+}
+
+.our-projects-section > div > hr {
+  width: 100px;
+  height: 8px;
+  background-color: white;
+  border: none;
+  margin: 0;
+}
+
+.our-projects-grid-section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 22px;
+}
+
+.our-projects-grid-section > div > .image-container {
+  width: 268px;
+  height: 239px;
+  overflow: hidden;
+  position: relative;
+  border-radius: 4px;
+}
+
+.our-projects-grid-section > div > p {
+  margin: 0;
+  vertical-align: bottom;
+  line-height: 100%;
+  margin-top: 29px;
+}
