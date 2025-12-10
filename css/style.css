@@ -393,7 +393,7 @@ header {
 .team-text-section {
   display: flex;
   flex-direction: column;
-  gap: 39px;
+  justify-content: space-between;
 }
 
 .team-text-section > div > h2 {
@@ -420,4 +420,5 @@ header {
   padding: 21px 41px 21px 35px;
   width: fit-content;
   border-radius: 4px;
+  border: 0;
 }
