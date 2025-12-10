@@ -2,10 +2,9 @@
   --color-background: #2b4074;
   --color-surface: #f9f6e5;
   --color-caption: #797979;
-  --color-section-border: #f9f6e5;
   --color-empty: #ffffff00;
-  --color-service-labels: #4a4a4a;
-  --color-service-description: #9b9b9b;
+  --color-labels: #4a4a4a;
+  --color-caption-extra: #9b9b9b;
 }
 
 .text-white {
@@ -16,12 +15,20 @@
   color: var(--color-background);
 }
 
+.text-caption-extra {
+  color: var(--color-caption-extra);
+}
+
 .text-service-label {
   color: var(--color-service-labels);
 }
 
 .text-service-description {
   color: var(--color-service-description);
+}
+
+.text-surface {
+  color: var(--color-surface);
 }
 
 .bg-background {
@@ -223,7 +230,7 @@ header {
 
 .service-section > div > h3 {
   line-height: 30px;
-  color: #4a4a4a;
+  color: var(--color-labels);
   margin: 0;
 }
 
@@ -248,7 +255,7 @@ header {
 
 .service-section-grid > .element-wrapper {
   padding: 10px;
-  border: solid 1px #f9f6e5;
+  border: solid 1px (var(--color-surface));
   height: 100%;
   box-sizing: border-box;
 }
@@ -303,6 +310,11 @@ header {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  gap: 24px;
+}
+
+.our-projects-section > .title > h2 {
+  line-height: 52px;
 }
 
 .our-projects-section > div > h2 {
@@ -322,6 +334,32 @@ header {
   grid-template-columns: repeat(4, 1fr);
   gap: 22px;
 }
+.our-projects-grid-section > div {
+  position: relative;
+}
+.our-projects-grid-section > div > .image-container:hover > .about-hover {
+  --padding-value: 12px;
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: var(--padding-value);
+  width: calc(100% - (var(--padding-value) * 2));
+  height: calc(100% - (var(--padding-value) * 2));
+  background-color: var(--color-surface);
+  border-radius: 4px;
+  opacity: 83.5%;
+}
+
+.our-projects-grid-section > div > .image-container > .about-hover {
+  display: none;
+}
+
+.our-projects-grid-section > div > .image-container > .about-hover > div {
+  display: flex;
+  gap: 4px;
+}
 
 .our-projects-grid-section > div > .image-container {
   width: 268px;
@@ -335,5 +373,51 @@ header {
   margin: 0;
   vertical-align: bottom;
   line-height: 100%;
-  margin-top: 29px;
+  margin-top: 39px;
+}
+
+.team-section {
+  padding: 80px 0 80px 150px;
+}
+
+.team-section > div {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+}
+
+.team-section > div > img {
+  border-radius: 4px;
+}
+
+.team-text-section {
+  display: flex;
+  flex-direction: column;
+  gap: 39px;
+}
+
+.team-text-section > div > h2 {
+  margin-bottom: 30px;
+  line-height: 52px;
+  vertical-align: bottom;
+  color: var(--color-labels);
+}
+
+.team-text-section > div > hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  height: 8px;
+  width: 100px;
+  background-color: var(--color-background);
+}
+
+.team-text-section > p {
+  max-width: 506px;
+}
+
+.team-text-section > button {
+  padding: 21px 41px 21px 35px;
+  width: fit-content;
+  border-radius: 4px;
 }
