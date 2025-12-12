@@ -20,11 +20,11 @@
 }
 
 .text-service-label {
-  color: var(--color-service-labels);
+  color: var(--color-labels);
 }
 
 .text-service-description {
-  color: var(--color-service-description);
+  color: var(--color-caption-extra);
 }
 
 .text-surface {
@@ -37,6 +37,10 @@
 
 .bg-surface {
   background-color: var(--color-surface);
+}
+
+.bg-white {
+  background-color: white;
 }
 
 .text-display-large {
@@ -231,18 +235,11 @@ header {
 .service-section > div > h3 {
   line-height: 30px;
   color: var(--color-labels);
-  margin: 0;
-}
-
-.service-section > div > hr {
-  width: 100px;
-  height: 8px;
-  background-color: var(--color-background);
-  margin: 30px 0 35px 0;
+  margin: 0 0 30px 0;
 }
 
 .service-section > div > p {
-  margin: 0;
+  margin: 35px 0 0 0;
   color: var(--color-caption);
 }
 
@@ -321,14 +318,6 @@ header {
   vertical-align: bottom;
 }
 
-.our-projects-section > div > hr {
-  width: 100px;
-  height: 8px;
-  background-color: white;
-  border: none;
-  margin: 0;
-}
-
 .our-projects-grid-section {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -403,13 +392,12 @@ header {
   color: var(--color-labels);
 }
 
-.team-text-section > div > hr {
+.separator {
   margin: 0;
   padding: 0;
   border: 0;
   height: 8px;
   width: 100px;
-  background-color: var(--color-background);
 }
 
 .team-text-section > p {
@@ -421,4 +409,46 @@ header {
   width: fit-content;
   border-radius: 4px;
   border: 0;
+}
+
+.last-news-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 52px 135px 80px 153px;
+  gap: 115px;
+}
+
+.last-news-section > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 19px;
+}
+
+.last-news-section > div > h2 {
+  line-height: 56px;
+  letter-spacing: 0px;
+  vertical-align: bottom;
+}
+
+.last-news-section > ul {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  list-style-type: none;
+}
+
+.last-news-section > ul > li {
+  border-radius: 4px;
+  overflow: hidden;
+  position: relative;
+}
+
+.last-news-section > ul > li#last-news-1 {
+  height: 444px;
+  width: 270px;
+}
+
+.last-news-section > ul > li#last-news-1 > .image-container {
+  position: relative;
 }
