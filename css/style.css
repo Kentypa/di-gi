@@ -410,7 +410,6 @@ header {
   border-radius: 4px;
   border: 0;
 }
-
 .last-news-section {
   display: flex;
   flex-direction: column;
@@ -440,8 +439,50 @@ header {
 
 .last-news-section > ul > li {
   border-radius: 4px;
-  overflow: hidden;
   position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  box-sizing: border-box;
+}
+
+.last-news-section > ul > li:hover {
+  padding-bottom: 30px;
+}
+
+.last-news-section > ul > li::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(107, 176, 113, 1);
+  mix-blend-mode: luminosity;
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.last-news-section > ul > li::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(43, 64, 116, 1);
+  mix-blend-mode: soft-light;
+  opacity: 0.9;
+  z-index: 1;
+}
+
+.last-news-section > ul > li > article > img {
+  position: absolute;
+  object-fit: cover;
+  z-index: 2;
+}
+
+.last-news-section > ul > li > article > p {
+  position: relative;
+  z-index: 4;
+  padding: 8px 0px 10px 20px;
+  background-color: white;
+  text-align: start;
 }
 
 .last-news-section > ul > li#last-news-1 {
@@ -449,6 +490,36 @@ header {
   width: 270px;
 }
 
-.last-news-section > ul > li#last-news-1 > .image-container {
+.last-news-section > ul > li > .overlay {
+  display: none;
+  position: absolute;
+  inset: 0;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.last-news-section > ul > li:hover > .overlay {
+  display: flex;
+  border: 10px solid var(--color-background);
+}
+
+.last-news-section > ul > li:hover > article > p {
+  background-color: var(--color-background);
+  color: var(--color-surface);
+  z-index: 4;
+}
+
+.last-news-section > ul > li:hover > .overlay::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--color-background);
+  opacity: 0.3;
+  z-index: 3;
+}
+
+.last-news-section > ul > li:hover > .overlay > svg {
   position: relative;
+  z-index: 4;
 }
