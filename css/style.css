@@ -432,11 +432,9 @@ header {
   vertical-align: bottom;
 }
 
-.last-news-section > ul {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  list-style-type: none;
-  gap: 30px;
+.last-news-section > .grid {
+  width: 100%;
+  display: block;
 }
 
 .last-news-section > ul > li {
@@ -446,7 +444,9 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  float: left;
   box-sizing: border-box;
+  margin-bottom: 30px;
 }
 
 .last-news-section > ul > li:hover {
@@ -460,7 +460,7 @@ header {
   background: rgba(107, 176, 113, 1);
   mix-blend-mode: luminosity;
   opacity: 0.1;
-  z-index: 0;
+  z-index: 5;
 }
 
 .last-news-section > ul > li::after {
@@ -469,8 +469,8 @@ header {
   inset: 0;
   background: rgba(43, 64, 116, 1);
   mix-blend-mode: soft-light;
-  opacity: 0.9;
-  z-index: 1;
+  /* opacity: 0.9; */
+  z-index: 5;
 }
 
 .last-news-section > ul > li > article > img {
@@ -481,7 +481,7 @@ header {
 
 .last-news-section > ul > li > article > p {
   position: relative;
-  z-index: 4;
+  z-index: 6;
   padding: 8px 0px 10px 20px;
   background-color: white;
   text-align: start;
@@ -534,4 +534,29 @@ header {
 .last-news-section > ul > li#graphics-deer-3 {
   width: 268px;
   height: 383px;
+}
+
+.last-news-section > ul > li#corporate-culture-4 {
+  width: 253px;
+  height: 210px;
+}
+
+.last-news-section > ul > li#unique-design-5 {
+  width: 270px;
+  height: 197px;
+}
+
+.last-news-section > ul > li#look-from-side-6 {
+  width: 270px;
+  height: 342px;
+}
+
+.last-news-section > ul > li#social-media-7 {
+  width: 270px;
+  height: 218px;
+}
+
+.last-news-section > ul > li#exclusive-8 {
+  width: 253px;
+  height: 436px;
 }
