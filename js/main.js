@@ -7,6 +7,11 @@ $(function () {
       gutter: 30,
     });
   });
+
+  const topButton = document.getElementById("top-button");
+  topButton.addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
 });
 
 $(document).ready(function () {

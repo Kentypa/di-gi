@@ -680,7 +680,7 @@ header {
   align-items: center;
   box-sizing: border-box;
   border-left: 1px solid var(--color-extra-1);
-  padding: 22px 0;
+  padding: 20px 0;
 }
 
 .footer-block .elements-links .social-media-links > li:first-child {
@@ -711,4 +711,27 @@ header {
 .footer-block .elements-links .help-links .link-item a {
   text-decoration: none;
   font-style: normal;
+}
+
+.back-to-top {
+  display: flex;
+  background-color: var(--color-surface);
+  justify-content: flex-end;
+  align-items: center;
+  padding: 13px 146px;
+}
+
+.back-to-top button {
+  appearance: none;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  background-color: var(--color-empty);
+  display: flex;
+  gap: 26px;
+  align-items: flex-end;
+}
+
+.back-to-top button p {
+  font-weight: normal;
 }
