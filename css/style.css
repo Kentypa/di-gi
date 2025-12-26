@@ -130,7 +130,7 @@
 }
 
 .text-note {
-  font-family: "Dosis", sans-serif;
+  font-family: Dosis;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -253,6 +253,7 @@ header {
   width: 924px;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 273px);
+  list-style-type: none;
 }
 
 .service-section-grid > .element-wrapper {
@@ -270,6 +271,7 @@ header {
   border: solid 4px var(--color-empty);
   height: 100%;
   max-height: 273px;
+  box-sizing: border-box;
 }
 
 .service-section-grid > .element-wrapper:hover > .element {
@@ -278,7 +280,6 @@ header {
 
 .service-section-grid > .element-wrapper > .element > h4 {
   margin-top: 28px;
-  text-transform: uppercase;
 }
 
 .service-section-grid > .element-wrapper:hover > .element > h4 {
@@ -329,12 +330,14 @@ header {
   gap: 22px;
   width: 100%;
   justify-content: center;
+  list-style-type: none;
 }
 
-.our-projects-grid-section > div {
+.our-projects-grid-section li {
   position: relative;
 }
-.our-projects-grid-section > div > .image-container:hover > .about-hover {
+
+.our-projects-grid-section li .image-container:hover .about-hover {
   --padding-value: 12px;
   position: absolute;
   z-index: 10;
@@ -349,16 +352,16 @@ header {
   opacity: 83.5%;
 }
 
-.our-projects-grid-section > div > .image-container > .about-hover {
+.our-projects-grid-section li .image-container .about-hover {
   display: none;
 }
 
-.our-projects-grid-section > div > .image-container > .about-hover > div {
+.our-projects-grid-section li .image-container .about-hover div {
   display: flex;
   gap: 4px;
 }
 
-.our-projects-grid-section > div > .image-container {
+.our-projects-grid-section li .image-container {
   width: 268px;
   height: 239px;
   overflow: hidden;
@@ -366,11 +369,15 @@ header {
   border-radius: 4px;
 }
 
-.our-projects-grid-section > div > p {
+.our-projects-grid-section li p {
   margin: 0;
   vertical-align: bottom;
   line-height: 100%;
   margin-top: 39px;
+}
+
+.our-projects-grid-section a {
+  text-decoration: none;
 }
 
 .team-section {
