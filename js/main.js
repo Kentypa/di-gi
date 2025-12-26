@@ -1,11 +1,13 @@
 $(function () {
   $(".grid").imagesLoaded(function () {
-    $(".grid").masonry({
-      itemSelector: ".grid-item",
-      horizontalOrder: true,
-      fitWidth: true,
-      gutter: 30,
-    });
+    if (window.innerWidth >= 1440) {
+      $(".grid").masonry({
+        itemSelector: ".grid-item",
+        horizontalOrder: true,
+        fitWidth: true,
+        gutter: 30,
+      });
+    }
   });
 
   const topButton = document.getElementById("top-button");

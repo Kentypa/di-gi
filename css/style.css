@@ -423,8 +423,12 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 52px 135px 80px 153px;
+  padding: 52px 135px 80px 135px;
   gap: 115px;
+}
+
+.last-news-section a {
+  text-decoration: none;
 }
 
 .last-news-section > div {
@@ -445,7 +449,7 @@ header {
   display: block;
 }
 
-.last-news-section > ul > li {
+.last-news-section ul li {
   border-radius: 4px;
   position: relative;
   overflow: hidden;
@@ -457,11 +461,11 @@ header {
   margin-bottom: 30px;
 }
 
-.last-news-section > ul > li:hover {
+.last-news-section ul li:hover {
   padding-bottom: 30px;
 }
 
-.last-news-section > ul > li::before {
+.last-news-section ul li::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -469,9 +473,10 @@ header {
   mix-blend-mode: luminosity;
   opacity: 0.1;
   z-index: 5;
+  pointer-events: none;
 }
 
-.last-news-section > ul > li::after {
+.last-news-section ul li::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -479,15 +484,16 @@ header {
   mix-blend-mode: soft-light;
   /* opacity: 0.9; */
   z-index: 5;
+  pointer-events: none;
 }
 
-.last-news-section > ul > li > article > img {
+.last-news-section ul li article img {
   position: absolute;
   object-fit: cover;
   z-index: 2;
 }
 
-.last-news-section > ul > li > article > p {
+.last-news-section ul li article p {
   position: relative;
   z-index: 6;
   padding: 8px 0px 10px 20px;
@@ -495,7 +501,11 @@ header {
   text-align: start;
 }
 
-.last-news-section > ul > li > .overlay {
+.overlay {
+  pointer-events: none;
+}
+
+.last-news-section ul li .overlay {
   display: none;
   position: absolute;
   inset: 0;
@@ -504,18 +514,18 @@ header {
   z-index: 3;
 }
 
-.last-news-section > ul > li:hover > .overlay {
+.last-news-section ul li:hover .overlay {
   display: flex;
   border: 10px solid var(--color-background);
 }
 
-.last-news-section > ul > li:hover > article > p {
+.last-news-section ul li:hover article p {
   background-color: var(--color-background);
   color: var(--color-surface);
   z-index: 4;
 }
 
-.last-news-section > ul > li:hover > .overlay::after {
+.last-news-section ul li:hover .overlay::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -524,12 +534,12 @@ header {
   z-index: 3;
 }
 
-.last-news-section > ul > li:hover > .overlay > svg {
+.last-news-section ul li:hover .overlay svg {
   position: relative;
   z-index: 4;
 }
 
-.last-news-section > ul > li#last-news-1 {
+.last-news-section ul li#last-news-1 {
   width: 270px;
   height: 444px;
 }
@@ -540,7 +550,7 @@ header {
 }
 
 .last-news-section > ul > li#graphics-deer-3 {
-  width: 268px;
+  width: 270px;
   height: 383px;
 }
 
@@ -644,13 +654,17 @@ header {
   padding: 158px 150px 80px 150px;
 }
 
-.footer-block .site-logo {
+.footer-block .logo-link {
   position: absolute;
   top: 0;
-  padding: 0px 73px 5px 74px;
   background-color: var(--color-background);
   border-radius: 3px;
   transform: translate(0, -50%);
+  margin: 0;
+}
+
+.footer-block .logo-link .site-logo {
+  padding: 0px 73px 5px 74px;
   margin: 0;
 }
 
@@ -688,13 +702,11 @@ header {
 }
 
 .footer-block .elements-links .help-links {
-  list-style-type: none;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
 
 .footer-block .elements-links .help-links .link-item {
-  list-style-type: none;
   display: flex;
   flex-direction: column;
   gap: 22px;
@@ -702,10 +714,17 @@ header {
 
 .footer-block .elements-links .help-links .link-item > h4 {
   text-align: left;
+  margin: 0;
 }
 
 .footer-block .elements-links .help-links .link-item ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-block .elements-links .help-links .link-item address {
+  font-style: normal;
 }
 
 .footer-block .elements-links .help-links .link-item a {
