@@ -25,4 +25,8 @@ $(document).ready(function () {
   $(".intro-prev").click(() => {
     owlCarousel.trigger("prev.owl.carousel");
   });
+
+  $(".intro-next").click(() => {
+    owlCarousel.trigger("next.owl.carousel");
+  });
 });

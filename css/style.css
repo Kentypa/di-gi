@@ -296,7 +296,8 @@ button {
 }
 
 .intro-section .owl-item {
-  padding: 107px 0 78px 0;
+  padding-top: 107px;
+  margin-bottom: 123px;
 }
 
 .intro-section .intro-header {
@@ -323,6 +324,9 @@ button {
   > li::marker {
   content: none;
 }
+.intro-section .owl-theme .owl-nav.disabled + .owl-dots {
+  margin: 0;
+}
 
 .intro-section .owl-dot span {
   background: white !important;
@@ -335,12 +339,29 @@ button {
   box-sizing: border-box;
 }
 
-.intro-section .intro-prev {
+.intro-owl-button {
   margin: 0;
   border: 0;
   line-height: 0;
   padding: 22px 27px;
+}
+
+.intro-section .intro-nav {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: fit-content;
+}
+
+.intro-section .intro-next {
   background-color: var(--color-primary);
+}
+
+.intro-section .intro-prev {
+  background-color: var(--color-secondary);
 }
 
 .call-me-back-section {
