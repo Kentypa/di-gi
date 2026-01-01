@@ -313,6 +313,34 @@ button {
   padding: 16px 42px;
   border: none;
   border-radius: 3px;
+  font-weight: normal;
+}
+
+.intro-section
+  > div.owl-carousel
+  > div.owl-stage-outer
+  > ul.owl-stage
+  > li::marker {
+  content: none;
+}
+
+.intro-section .owl-dot span {
+  background: white !important;
+  margin: 0 5px !important;
+}
+
+.intro-section .owl-dot.active span {
+  background: var(--color-transparent) !important;
+  border: 1px solid white;
+  box-sizing: border-box;
+}
+
+.intro-section .intro-prev {
+  margin: 0;
+  border: 0;
+  line-height: 0;
+  padding: 22px 27px;
+  background-color: var(--color-primary);
 }
 
 .call-me-back-section {
@@ -783,12 +811,12 @@ button {
   font-size: 24px;
 }
 
-.owl-dot span {
+.quote-section .owl-dot span {
   background: var(--color-primary) !important;
   margin: 0 5px !important;
 }
 
-.owl-dot.active span {
+.quote-section .owl-dot.active span {
   background: var(--color-transparent) !important;
   border: 1px solid #476e4d;
   box-sizing: border-box;

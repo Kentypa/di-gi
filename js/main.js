@@ -16,10 +16,13 @@ $(function () {
 });
 
 $(document).ready(function () {
-  $(".owl-carousel").owlCarousel({
+  let owlCarousel = $(".owl-carousel").owlCarousel({
     items: 1,
     loop: true,
     autoplay: true,
-    nav: true,
+  });
+
+  $(".intro-prev").click(() => {
+    owlCarousel.trigger("prev.owl.carousel");
   });
 });
