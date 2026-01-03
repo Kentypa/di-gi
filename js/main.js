@@ -1,4 +1,4 @@
-$(function () {
+$(document).ready(function () {
   $(".grid").imagesLoaded(function () {
     $(".grid").masonry({
       itemSelector: ".grid-item",
@@ -9,24 +9,27 @@ $(function () {
     });
   });
 
-  const topButton = document.getElementById("top-button");
-  topButton.addEventListener("click", () => {
+  $("#top-button").click(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
   });
-});
 
-$(document).ready(function () {
-  let owlCarousel = $(".owl-carousel").owlCarousel({
-    items: 1,
-    loop: true,
-    autoplay: true,
-  });
+  $(".carousel-wrapper").each(function () {
+    let carousel = $(this).find(".owl-carousel").owlCarousel({
+      items: 1,
+      loop: true,
+      autoplay: true,
+    });
 
-  $(".intro-prev").click(() => {
-    owlCarousel.trigger("prev.owl.carousel");
-  });
+    $(this)
+      .find(".intro-prev")
+      .click(() => {
+        carousel.trigger("prev.owl.carousel");
+      });
 
-  $(".intro-next").click(() => {
-    owlCarousel.trigger("next.owl.carousel");
+    $(this)
+      .find(".intro-next")
+      .click(() => {
+        carousel.trigger("next.owl.carousel");
+      });
   });
 });

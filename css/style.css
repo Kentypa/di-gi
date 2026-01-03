@@ -6,6 +6,8 @@
   --color-tertiary: #4a4a4a;
   --color-light: #9b9b9b;
   --color-accent: #7ebf84;
+  --color-owl-btn-hover: #929292;
+  --color-owl-dot-border: #476e4d;
 
   --space-1: 4px;
   --space-2: 8px;
@@ -15,12 +17,6 @@
   --space-10: 40px;
   --space-16: 64px;
   --space-20: 80px;
-}
-
-@font-face {
-  font-family: "Blogger Sans";
-  src: url("../assets/fonts/Blogger-Sans-Dosis/Bloggersans.otf")
-    format("opentype");
 }
 
 /* Layout */
@@ -236,7 +232,7 @@
 }
 
 .text-note {
-  font-family: "Blogger Sans";
+  font-family: "Dosis", sans-serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 18px;
@@ -259,6 +255,7 @@ header {
   align-items: center;
   justify-content: space-between;
   height: 100px;
+  padding: 0 135px 0 153px;
 }
 
 button {
@@ -266,7 +263,8 @@ button {
 }
 
 .site-logo {
-  margin-left: 153px;
+  width: 100px;
+  height: 65.73px;
 }
 
 .menu-button {
@@ -279,7 +277,6 @@ button {
   padding: 0;
   border-width: none;
   border-radius: 3px;
-  margin-right: 135px;
 }
 
 .menu-button > img {
@@ -293,6 +290,7 @@ button {
   height: 668px;
   background-color: rgba(33, 33, 33, 0.5);
   background-blend-mode: multiply;
+  position: relative;
 }
 
 .intro-section .owl-item {
@@ -302,7 +300,7 @@ button {
 
 .intro-section .intro-header {
   text-align: center;
-  margin-bottom: 18px;
+  margin-bottom: 26px;
 }
 
 .intro-section .intro-text {
@@ -344,24 +342,26 @@ button {
   border: 0;
   line-height: 0;
   padding: 22px 27px;
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.intro-owl-button:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-owl-btn-hover);
 }
 
 .intro-section .intro-nav {
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   right: 0;
   display: flex;
   flex-direction: column;
   gap: 1px;
   width: fit-content;
-}
-
-.intro-section .intro-next {
-  background-color: var(--color-primary);
-}
-
-.intro-section .intro-prev {
-  background-color: var(--color-secondary);
+  line-height: 0;
+  z-index: 1;
 }
 
 .call-me-back-section {
@@ -381,12 +381,7 @@ button {
 
 .call-me-back-section > div > p {
   margin: 0;
-  height: 42px;
-  vertical-align: bottom;
-}
-
-.call-me-back-section > div > h3 {
-  margin: 0;
+  padding-top: 6px;
 }
 
 .call-me-back-button {
@@ -509,6 +504,38 @@ button {
   list-style-type: none;
 }
 
+.our-projects-grid-section #lalique-butik {
+  position: absolute;
+  top: -6px;
+  left: -75.5px;
+  width: 452px;
+  height: 251px;
+}
+
+.our-projects-grid-section #random-house {
+  position: absolute;
+  top: -13px;
+  left: -84px;
+  width: 477px;
+  height: 265px;
+}
+
+.our-projects-grid-section #coffee-cafe {
+  position: absolute;
+  top: -12px;
+  left: -102px;
+  width: 472px;
+  height: 262px;
+}
+
+.our-projects-grid-section #unique-tours {
+  position: absolute;
+  top: -8px;
+  left: -87px;
+  width: 484px;
+  height: 269px;
+}
+
 .our-projects-grid-section li {
   position: relative;
 }
@@ -626,26 +653,14 @@ button {
   display: block;
 }
 
+.gutter-sizer {
+  width: 30px;
+}
+
 .grid-item,
 .grid-sizer {
-  width: 100%;
+  width: calc((100% - 90px) / 4);
   margin-bottom: 30px;
-}
-
-.gutter-sizer {
-  width: 0;
-}
-
-@media (min-width: 1440px) {
-  .gutter-sizer {
-    width: 30px;
-  }
-
-  .grid-item,
-  .grid-sizer {
-    width: calc((100% - 90px) / 4);
-    margin-bottom: 30px;
-  }
 }
 
 .last-news-section ul li {
@@ -839,7 +854,7 @@ button {
 
 .quote-section .owl-dot.active span {
   background: var(--color-transparent) !important;
-  border: 1px solid #476e4d;
+  border: 1px solid var(--color-owl-dot-border);
   box-sizing: border-box;
 }
 
@@ -952,4 +967,157 @@ button {
 
 .back-to-top button p {
   font-weight: normal;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 0 42px 0 46px;
+  }
+
+  .intro-section {
+    background-position: 0px -419px;
+    height: 618px;
+    background-size: 1380px 1037px;
+  }
+
+  .text-display-large {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 84px;
+    line-height: 84px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .text-title {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0px;
+  }
+
+  .intro-section .intro-text {
+    margin-bottom: 12px;
+  }
+
+  .intro-section .owl-item {
+    padding-top: 101px;
+    margin-bottom: 112px;
+  }
+
+  .intro-section .owl-dot span {
+    background: var(--color-primary) !important;
+  }
+
+  .intro-section .owl-dot.active span {
+    border: 1px solid var(--color-owl-dot-border);
+  }
+
+  .call-me-back-section {
+    padding: 40px 43px 40px 46px;
+  }
+
+  .text-body-large {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-align: bottom;
+  }
+
+  .text-note {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0px;
+  }
+
+  .call-me-back-section > div {
+    gap: 10px;
+  }
+
+  .call-me-back-section > div > h3 {
+    padding-top: 10px;
+  }
+
+  .call-me-back-section > div > p {
+    padding-top: 10px;
+  }
+
+  .service-section {
+    flex-direction: column;
+    gap: 32px;
+  }
+
+  .service-section-grid {
+    width: auto;
+  }
+
+  .service-section > .service-text {
+    margin: 52px 46px 0 46px;
+    max-width: 100%;
+  }
+
+  .service-section > div > h2 {
+    text-align: center;
+    line-height: 52px;
+  }
+
+  .service-section > div > h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 0px;
+    vertical-align: bottom;
+  }
+
+  .service-section > div > p {
+    max-width: 520px;
+  }
+
+  .our-projects-grid-section li .image-container {
+    width: 318px;
+    height: 282px;
+  }
+
+  .our-projects-grid-section {
+    grid-template-columns: repeat(auto-fit, 318px);
+    gap: 28px;
+  }
+
+  .our-projects-grid-section #lalique-butik {
+    position: absolute;
+    top: -14px;
+    left: -109px;
+    width: 535px;
+    height: 297px;
+  }
+
+  .our-projects-grid-section #random-house {
+    position: absolute;
+    top: -15px;
+    left: -99px;
+    width: 565px;
+    height: 314px;
+  }
+
+  .our-projects-grid-section #coffee-cafe {
+    position: absolute;
+    top: -14px;
+    left: -120px;
+    width: 558px;
+    height: 310px;
+  }
+
+  .our-projects-grid-section #unique-tours {
+    position: absolute;
+    top: -9px;
+    left: -103px;
+    width: 573px;
+    height: 318px;
+  }
 }

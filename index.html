@@ -24,21 +24,16 @@
       <img
         alt="Site logo"
         src="assets/images/site-logo.png"
-        style="width: 100px; height: 65.73px"
         class="site-logo"
       />
 
       <button class="menu-button">
-        <img
-          src="assets/svgs/menu-burger.svg"
-          alt="Burger menu"
-          style="width: 12px; height: 10px"
-        />
+        <img src="assets/svgs/menu-burger.svg" alt="Burger menu" />
       </button>
     </header>
 
     <main>
-      <section class="intro-section">
+      <section class="intro-section carousel-wrapper">
         <div class="owl-carousel owl-theme owl-loaded">
           <div class="owl-stage-outer">
             <ul class="owl-stage">
@@ -58,6 +53,7 @@
                   </p>
                   <button
                     class="uppercase text-white text-button intro-button bg-primary"
+                    aria-label="More details about Di Gi"
                   >
                     детальніше
                   </button>
@@ -79,6 +75,7 @@
                   </p>
                   <button
                     class="uppercase text-white text-button intro-button bg-primary"
+                    aria-label="More details about Di Gi"
                   >
                     детальніше
                   </button>
@@ -100,6 +97,7 @@
                   </p>
                   <button
                     class="uppercase text-white text-button intro-button bg-primary"
+                    aria-label="More details about Di Gi"
                   >
                     детальніше
                   </button>
@@ -107,40 +105,48 @@
               </li>
             </ul>
           </div>
-          <div class="intro-nav">
-            <button class="intro-owl-button intro-next">
-              <svg
-                width="16"
-                height="26"
-                viewBox="0 0 16 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="white"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M12.7279 25.4558L0 12.7279L12.7279 -1.3113e-06L15.5563 2.82843L5.65685 12.7279L15.5563 22.6274L12.7279 25.4558Z"
-                />
-              </svg>
-            </button>
-            <button class="intro-owl-button intro-prev">
-              <svg
-                width="16"
-                height="26"
-                viewBox="0 0 16 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill="#929292"
-                  fill-rule="evenodd"
-                  clip-rule="evenodd"
-                  d="M2.82872 -1.3113e-06L15.5566 12.7279L2.82872 25.4558L0.000291705 22.6274L9.89979 12.7279L0.000291705 2.82843L2.82872 -1.3113e-06Z"
-                />
-              </svg>
-            </button>
-          </div>
+        </div>
+        <div class="intro-nav">
+          <button
+            class="intro-owl-button intro-next"
+            aria-label="Intro next slide button"
+          >
+            <svg
+              width="16"
+              height="26"
+              viewBox="0 0 16 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M12.7279 25.4558L0 12.7279L12.7279 -1.3113e-06L15.5563 2.82843L5.65685 12.7279L15.5563 22.6274L12.7279 25.4558Z"
+              />
+            </svg>
+          </button>
+          <button
+            class="intro-owl-button intro-prev"
+            aria-label="Intro previous slide button"
+          >
+            <svg
+              width="16"
+              height="26"
+              viewBox="0 0 16 26"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.82872 -1.3113e-06L15.5566 12.7279L2.82872 25.4558L0.000291705 22.6274L9.89979 12.7279L0.000291705 2.82843L2.82872 -1.3113e-06Z"
+              />
+            </svg>
+          </button>
         </div>
       </section>
 
@@ -362,13 +368,8 @@
 
                   <img
                     src="assets/images/company-projects/lalique-butik.png"
-                    style="
-                      position: absolute;
-                      top: -6px;
-                      left: -75.5px;
-                      width: 452px;
-                      height: 251px;
-                    "
+                    alt="Lalique butik image"
+                    id="lalique-butik"
                   />
                 </div>
                 <figcaption>
@@ -418,13 +419,8 @@
 
                   <img
                     src="assets/images/company-projects/random-house.jpg"
-                    style="
-                      position: absolute;
-                      top: -13px;
-                      left: -84px;
-                      width: 477px;
-                      height: 265px;
-                    "
+                    alt="Random house image"
+                    id="random-house"
                   />
                 </div>
                 <figcaption>
@@ -474,13 +470,8 @@
 
                   <img
                     src="assets/images/company-projects/coffee-cafe.jpg"
-                    style="
-                      position: absolute;
-                      top: -12px;
-                      left: -102px;
-                      width: 472px;
-                      height: 262px;
-                    "
+                    alt="Coffee cafe image"
+                    id="coffee-cafe"
                   />
                 </div>
                 <figcaption>
@@ -530,13 +521,8 @@
 
                   <img
                     src="assets/images/company-projects/unique-tours.png"
-                    style="
-                      position: absolute;
-                      top: -8px;
-                      left: -87px;
-                      width: 484px;
-                      height: 269px;
-                    "
+                    alt="Unique tours image"
+                    id="unique-tours"
                   />
                 </div>
                 <figcaption>
@@ -922,7 +908,7 @@
         </ul>
       </section>
 
-      <section class="quote-section">
+      <section class="quote-section carousel-wrapper">
         <div class="owl-carousel owl-theme owl-loaded">
           <div class="owl-stage-outer">
             <ul class="owl-stage">
@@ -1190,7 +1176,7 @@
       </footer>
 
       <div class="back-to-top">
-        <button class="" id="top-button">
+        <button id="top-button" aria-label="Button to go of page top">
           <p class="uppercase text-label-bold text-tertiary">Нагору</p>
           <svg
             width="21"
