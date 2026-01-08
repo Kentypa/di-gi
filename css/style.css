@@ -1356,3 +1356,226 @@ button {
     margin-bottom: 28px;
   }
 }
+
+@media (max-width: 640px) {
+  header {
+    padding: 0 30px 0 53px;
+  }
+
+  .intro-section {
+    background-position: -330px -480px;
+    height: 386px;
+    background-size: 1488px 895px;
+  }
+
+  .intro-section .intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .intro-section .intro-header::after {
+    content: "";
+    display: inline-block;
+    margin-top: 7px;
+    width: 60px;
+    height: 8px;
+    background-color: var(--color-tertiary);
+  }
+
+  .intro-section .intro-text {
+    display: none;
+  }
+
+  .intro-section .owl-item {
+    padding-top: 50px;
+    margin-bottom: 53px;
+  }
+
+  .call-me-back-section {
+    padding: 40px 30px;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .call-me-back-section > div {
+    gap: 10px;
+  }
+
+  .call-me-back-section > div > h3 {
+    padding-top: 10px;
+  }
+
+  .call-me-back-section > div > p {
+    padding-top: 6px;
+    padding-bottom: 0px;
+  }
+
+  .service-section {
+    gap: 40px;
+  }
+
+  .service-section > .service-text {
+    display: flex;
+    flex-direction: column;
+    margin: 24px 40px 0 40px;
+    text-align: center;
+    align-items: center;
+  }
+
+  .service-section > div > h2 {
+    margin-bottom: 12px;
+  }
+
+  .service-section > div > p {
+    margin-top: 30px;
+  }
+
+  .service-section-grid {
+    height: fit-content;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 332px);
+  }
+
+  .our-projects-section {
+    padding: 40px 60px;
+  }
+
+  .our-projects-grid-section {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .our-projects-grid-section li .image-container {
+    width: 518px;
+    height: 460px;
+  }
+
+  .our-projects-grid-section {
+    grid-template-columns: repeat(1, 518px);
+    gap: 20px;
+  }
+
+  .our-projects-grid-section li p {
+    margin-top: 20px;
+  }
+
+  .our-projects-grid-section #lalique-butik {
+    top: -11px;
+    left: -178px;
+    width: 873px;
+    height: 483px;
+  }
+
+  .our-projects-grid-section #random-house {
+    top: -25px;
+    left: -162px;
+    width: 921px;
+    height: 510px;
+  }
+
+  .our-projects-grid-section #coffee-cafe {
+    top: -23px;
+    left: -197px;
+    width: 912px;
+    height: 504px;
+  }
+
+  .our-projects-grid-section #unique-tours {
+    top: -15px;
+    left: -168px;
+    width: 935px;
+    height: 517px;
+  }
+  .our-projects-grid-section li .image-container:hover .about-hover svg {
+    width: 54px;
+    height: 54px;
+  }
+
+  .team-section > div > img {
+    width: 520px;
+    height: 478px;
+    padding: 6px 0px;
+  }
+
+  .team-section {
+    padding: 46px 60px 53px 60px;
+  }
+
+  .team-section > div {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .team-text-section {
+    align-items: center;
+  }
+
+  .team-text-section > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .team-text-section > p {
+    padding: 8px 0;
+    margin-bottom: 56px;
+  }
+
+  .team-text-section > div {
+    margin-bottom: 40px;
+  }
+
+  .team-section > div {
+    gap: 34px;
+  }
+
+  .team-text-section > button {
+    transform: none;
+  }
+
+  .last-news-section {
+    padding: 40px 35px;
+    gap: 60px;
+  }
+
+  .gutter-sizer {
+    width: 60px;
+  }
+
+  .grid-item,
+  .grid-sizer {
+    width: calc((100% - 60px) / 2);
+    margin-bottom: 30px;
+  }
+
+  .quote-section .quote {
+    max-width: 385px;
+  }
+  .footer-block {
+    padding: 84px 40px 125px 40px;
+  }
+
+  .footer-block .elements-links .help-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .footer-block .elements-links .help-links .link-item {
+    margin-bottom: 40px;
+  }
+
+  .footer-block .elements-links .help-links .link-item:nth-child(2n) {
+    margin-left: 40px;
+  }
+
+  .footer-block .elements-links > h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 26px;
+    letter-spacing: 2px;
+    vertical-align: bottom;
+  }
+}
