@@ -1579,3 +1579,319 @@ button {
     vertical-align: bottom;
   }
 }
+
+@media (max-width: 320px) {
+  header {
+    padding: 0 20px 0 25px;
+    height: 80px;
+  }
+
+  .intro-section {
+    background-position: -165px -240px;
+    height: 193px;
+    background-size: 778px 450px;
+  }
+
+  .text-display-large {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 28px;
+    letter-spacing: 0px;
+  }
+
+  .intro-section .intro-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+  }
+
+  .intro-section .intro-header::after {
+    content: "";
+    display: inline-block;
+    margin-top: 20px;
+    width: 60px;
+    height: 8px;
+    background-color: var(--color-tertiary);
+  }
+
+  .intro-section .intro-nav {
+    display: none;
+  }
+
+  .intro-section .intro-text {
+    display: none;
+  }
+
+  .intro-section .intro-button {
+    display: none;
+  }
+
+  .intro-section .owl-item {
+    padding-top: 36px;
+    margin-bottom: 35px;
+  }
+
+  .service-section {
+    gap: 40px;
+  }
+
+  .service-section > .service-text {
+    margin: 25px 20px 0 20px;
+  }
+
+  .service-section > div > h2 {
+    margin-bottom: 20px;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: bottom;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-section > div > h2::after {
+    content: "";
+    display: inline-block;
+    margin-top: 20px;
+    width: 100px;
+    height: 8px;
+    background-color: var(--color-primary);
+  }
+
+  .service-section > div > hr {
+    display: none;
+  }
+
+  .service-section > div > h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: bottom;
+
+    padding-top: 24px;
+  }
+
+  .service-section > div > p {
+    margin-top: 0px;
+    padding-top: 21px;
+
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .service-section-grid {
+    padding: 0px 33px;
+    height: fit-content;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(8, 277px);
+  }
+
+  .our-projects-section {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .our-projects-grid-section {
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .our-projects-grid-section li .image-container {
+    width: 280px;
+    height: 250px;
+  }
+
+  .our-projects-grid-section {
+    grid-template-columns: repeat(1, 280px);
+  }
+
+  .our-projects-grid-section #lalique-butik {
+    left: -110px;
+    width: 472px;
+    height: 262px;
+  }
+
+  .our-projects-grid-section #random-house {
+    top: -13px;
+    left: -87px;
+    width: 498px;
+    height: 277px;
+  }
+
+  .our-projects-grid-section #coffee-cafe {
+    top: -12px;
+    left: -106px;
+    width: 493px;
+    height: 274px;
+  }
+
+  .our-projects-grid-section #unique-tours {
+    top: -8px;
+    left: -90px;
+    width: 505px;
+    height: 281px;
+  }
+
+  .our-projects-grid-section li .image-container:hover .about-hover svg {
+    width: 33px;
+    height: 33px;
+  }
+
+  .team-section > div > img {
+    width: 281px;
+    height: 243px;
+    padding: 3px 0px;
+  }
+
+  .team-section {
+    padding: 20px 20px 40px 20px;
+  }
+
+  .team-text-section > p {
+    padding: 8px 0;
+    margin-bottom: 56px;
+  }
+  .team-text-section > div > h2 {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .team-text-section > div > hr {
+    width: 45px;
+  }
+
+  .team-text-section > div {
+    margin-bottom: 40px;
+  }
+
+  .team-section > div {
+    gap: 34px;
+  }
+
+  .team-text-section > button {
+    transform: none;
+  }
+
+  .last-news-section {
+    padding: 40px 25px;
+    gap: 40px;
+  }
+
+  .last-news-section > div > h2 {
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .last-news-section > div > hr {
+    width: 50px;
+  }
+
+  .quote-section {
+    padding: 50px 0;
+  }
+
+  .quote-section .quote {
+    max-width: 100%;
+    font-family: Roboto Condensed;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    vertical-align: middle;
+
+    padding: 57px 0;
+  }
+
+  .quote-section blockquote {
+    gap: 28px;
+  }
+
+  .owl-theme .owl-nav.disabled + .owl-dots {
+    margin: 0 !important;
+  }
+
+  .quote-section .quote-item {
+    margin-bottom: 40px;
+  }
+
+  .footer-block {
+    padding: 85px 20px 40px 20px;
+  }
+
+  .footer-block .elements-links {
+    gap: 40px;
+  }
+
+  .footer-block .elements-links > h3 {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    text-align: center;
+    vertical-align: bottom;
+  }
+
+  .footer-block .elements-links .social-media-links > li {
+    border: 0;
+    padding: 0;
+  }
+
+  .footer-block .elements-links .social-media-links {
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .footer-block .elements-links .help-links {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .footer-block .elements-links .help-links .link-item {
+    margin-bottom: 40px;
+    text-align: center;
+  }
+
+  .footer-block .elements-links .help-links .link-item > h4 {
+    text-align: center;
+  }
+
+  .footer-block .elements-links .help-links .link-item:nth-child(2n) {
+    margin-left: 0px;
+  }
+
+  .back-to-top {
+    padding: 56px 20px 20px 20px;
+  }
+
+  .back-to-top button {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+}
