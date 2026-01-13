@@ -457,7 +457,7 @@ button {
   margin-bottom: 21px;
 }
 
-.service-section-grid > .element-wrapper > .element > span {
+.service-section-grid > .element-wrapper > .element > div {
   flex-direction: column;
   gap: 18px;
   align-items: center;
@@ -465,7 +465,7 @@ button {
   display: none;
 }
 
-.service-section-grid > .element-wrapper:hover > .element > span {
+.service-section-grid > .element-wrapper:hover > .element > div {
   display: flex;
 }
 
@@ -709,7 +709,7 @@ button {
   z-index: 2;
 }
 
-.last-news-section ul li article p {
+.last-news-section ul li article h3 {
   position: relative;
   z-index: 6;
   padding: 8px 0px 10px 20px;
@@ -735,7 +735,7 @@ button {
   border: 10px solid var(--color-primary);
 }
 
-.last-news-section ul li:hover article p {
+.last-news-section ul li:hover article h3 {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   z-index: 4;
@@ -967,7 +967,7 @@ button {
   align-items: flex-end;
 }
 
-.back-to-top button p {
+.back-to-top button span {
   font-weight: normal;
 }
 
