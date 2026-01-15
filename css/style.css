@@ -1063,7 +1063,7 @@ button {
   }
 
   .service-section > .service-text {
-    margin: 52px auto 0 auto;
+    margin: 52px 0 0 46px;
     max-width: 100%;
   }
 
